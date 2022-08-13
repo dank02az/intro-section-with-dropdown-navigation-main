@@ -4,32 +4,104 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
+  <!--Vendor-->
+  <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+  <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!--Main-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .w-45 {
+      width: 45%;
+    }
   </style>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg bg-white navbar-light py-3 fixed-top">
+  <div class="container">
+    <a href="" class="navbar-brand"><img src="./assets/images/logo.svg" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav">
+        <div class="nav-item dropdown">
+          <a href="" class="nav-link dropdown-toggle" id="navmenuDropdown" role="button" data-bs-toggle="dropdown">
+          Features</a>
+          <div class="dropdown-menu shadow-lg border-0" aria-labelledby="navmenuDropdown">
+            <a class="dropdown-item" href=""><span class="me-2"><img src="./assets/images/icon-todo.svg" alt=""></span>
+              Todo List</a>
+            <a class="dropdown-item" href=""><span class="me-2"><img src="./assets/images/icon-calendar.svg" alt=""></span>
+              Calendar</a>
+            <a class="dropdown-item" href=""><span class="me-2"><img src="./assets/images/icon-reminders.svg" alt=""></span>
+              Reminders</a>
+            <a href="" class="dropdown-item"><span class="me-2"><img src="./assets/images/icon-planning.svg" alt=""></span>
+              Planning</a>
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+          <a href="" class="nav-link dropdown-toggle" id="navmenuDropdown2" role="button" data-bs-toggle="dropdown">
+            Company</a>
+          <div class="dropdown-menu shadow-lg border-0" aria-labelledby="navmenuDropdown2">
+            <a href="" class="dropdown-item">History</a>
+            <a href="" class="dropdown-item">Our Team</a>
+            <a href="" class="dropdown-item">Blog</a>
+          </div>  
+        </div>
+        <div class="nav-item">
+          <a href="" class="nav-link">Carrers</a>
+        </div>
+        <div class="nav-item">
+          <a href="" class="nav-link">About</a>
+        </div>
+      </ul>
+      <ul class="m-0 ms-auto">
+        <button class="btn btn-outline">
+          <a class="nav-link ">Login</a>
+        </button>
+        <button class="btn btn-outline-dark">
+          <a href="" class="nav-link">Register</a>
+        </button>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-  Features
-  Company
-  Careers
-  About
+<section class="p-5">
+  <div class="container">
+    <div class="d-sm-flex align-items-beetween p-0">
+      <div class="p-5">
+        <h1 class="display-1 fw-bolder mt-5">Make 
+          <br>
+          <span>remote work<span>
+          </h1>
+        <p class="py-4 w-75 lead">
+          Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="btn btn-large bg-dark text-light mb-5">
+          Learn more
+        </button>
+        <div class="mt-5 pt-5">
+          <img class="me-4" src="./assets/images/client-databiz.svg" alt="">
+          <img class="me-4" src="./assets/images/client-audiophile.svg" alt="">
+          <img class="me-4" src="./assets/images/client-maker.svg" alt="">
+          <img class="me-4" src="./assets/images/client-maker.svg" alt="">
+        </div>
+      </div>
+        <img  class="w-45 p-5" src="./assets/images/image-hero-desktop.png" alt="">
+    </div>
+  </div>
+</section>
 
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
